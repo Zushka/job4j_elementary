@@ -10,5 +10,6 @@ public class Point {
         System.out.println(Point.distance(5, 5, 5, 5));
         System.out.println(Point.distance(5, 5, 2, 2));
         System.out.println(Point.distance(20, 20, 10, 10));
+        System.out.println("}:<)");
     }
 }
