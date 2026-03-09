@@ -25,6 +25,15 @@ class CounterTest {
     }
 
     @Test
+    public void whenStart1Finish1Then1() {
+        int start = 1;
+        int finish = 1;
+        int expected = 1;
+        int result = Counter.sum(start, finish);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     public void whenStart10Finish5Then0() {
         int start = 10;
         int finish = 5;
