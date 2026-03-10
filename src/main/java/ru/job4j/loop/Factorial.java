@@ -1,10 +1,12 @@
 package ru.job4j.loop;
 
+import java.math.BigInteger;
+
 public class Factorial {
-    public static int calculate(int number) {
-        int result = 1;
-        for (int i = 0; i < number; i++) {
-            result += result * i;
+    public static BigInteger calculate(int number) {
+        BigInteger result = BigInteger.valueOf(1);
+        for (int i = 1; i <= number; i++) {
+            result = result.multiply(BigInteger.valueOf(i));
         }
         return result;
     }
