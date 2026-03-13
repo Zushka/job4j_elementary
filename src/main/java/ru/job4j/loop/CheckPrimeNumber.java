@@ -5,14 +5,13 @@ public class CheckPrimeNumber {
         boolean prime = true;
         if (number == 1) {
             return false;
-        } else {
-            for (int i = 2; i <= number / 2; i++) {
-                if (number % i == 0) {
-                    prime = false;
-                    break;
-                }
-            }
-        return prime;
         }
+        for (int i = 2; i <= number / 2; i++) {
+            if (number % i == 0) {
+                prime = false;
+                break;
+            }
+        }
+    return prime;
     }
 }
